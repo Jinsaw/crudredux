@@ -6,11 +6,6 @@
       "precio": "31111"
     },
     {
-      "id": 2,
-      "nombre": "Jugo de Naranja",
-      "precio": "1"
-    },
-    {
       "nombre": "Jugo de Naranja",
       "precio": "300",
       "id": 3
@@ -29,11 +24,6 @@
       "nombre": "higado encebollado",
       "precio": 230,
       "id": 6
-    },
-    {
-      "nombre": "esfse",
-      "precio": 12,
-      "id": 7
     },
     {
       "nombre": "aw",
@@ -74,11 +64,6 @@
       "nombre": "sfeafesf",
       "precio": 12,
       "id": 15
-    },
-    {
-      "nombre": "wd",
-      "precio": 121,
-      "id": 16
     },
     {
       "nombre": "adww",

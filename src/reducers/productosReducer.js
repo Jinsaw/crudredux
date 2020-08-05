@@ -9,6 +9,7 @@ import {
     PRODUCTO_ELIMINADO_EXITO,
     PRODUCTO_ELIMINADO_ERROR
 } from '../types';
+import Producto from '../components/Producto';
 
 //Cada reducer tiene su propio state    
 const initialState = {
@@ -34,6 +35,7 @@ export default function(state = initialState, action) {
             }
         case DESCARGA_PRODUCTOS_ERROR:
         case AGREGAR_PRODUCTO_ERROR:
+        case PRODUCTO_ELIMINADO_ERROR:
             return {
                 ...state,
                 loading: false,
@@ -50,6 +52,13 @@ export default function(state = initialState, action) {
             return {
                 ...state,
                 productoeliminar: action.payload
+            }
+        case PRODUCTO_ELIMINADO_EXITO:
+            return {
+                ...state,
+                productos: state.productos.filter( producto => producto.id !== state.productoeliminar ),
+                //.filter() va a tomar algun atrib del objeto y retorna el registro o los demas excepto ese
+                productoeliminar: null
             }
         default:
             return state;
