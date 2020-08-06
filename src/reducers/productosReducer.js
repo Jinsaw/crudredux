@@ -7,7 +7,10 @@ import {
     DESCARGA_PRODUCTOS_ERROR,
     OBTENER_PRODUCTO_ELIMINAR,
     PRODUCTO_ELIMINADO_EXITO,
-    PRODUCTO_ELIMINADO_ERROR
+    PRODUCTO_ELIMINADO_ERROR,
+    OBTENER_PRODUCTO_EDITAR,
+    PRODUCTO_EDITADO_EXITO,
+    PRODUCTO_EDITADO_ERROR
 } from '../types';
 import Producto from '../components/Producto';
 
@@ -16,6 +19,7 @@ const initialState = {
     productos: [],
     error: null,
     loading: false,
+    productoeditar: null,
     productoeliminar: null
 }
 
@@ -59,6 +63,11 @@ export default function(state = initialState, action) {
                 productos: state.productos.filter( producto => producto.id !== state.productoeliminar ),
                 //.filter() va a tomar algun atrib del objeto y retorna el registro o los demas excepto ese
                 productoeliminar: null
+            }
+        case OBTENER_PRODUCTO_EDITAR: 
+            return {
+                ...state,
+                productoeditar: action.payload
             }
         default:
             return state;

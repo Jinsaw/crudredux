@@ -29,6 +29,11 @@
       "nombre": "nuevo producto",
       "precio": 600,
       "id": 7
+    },
+    {
+      "nombre": "agua",
+      "precio": 100,
+      "id": 8
     }
   ]
 }
