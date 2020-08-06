@@ -21,54 +21,14 @@
       "id": 5
     },
     {
-      "nombre": "higado encebollado",
-      "precio": 230,
+      "nombre": "Arroz con pollo",
+      "precio": 250,
       "id": 6
     },
     {
-      "nombre": "aw",
-      "precio": 12,
-      "id": 8
-    },
-    {
-      "nombre": "awd",
-      "precio": 12,
-      "id": 9
-    },
-    {
-      "nombre": "awd",
-      "precio": 14,
-      "id": 10
-    },
-    {
-      "nombre": "awd",
-      "precio": 14,
-      "id": 11
-    },
-    {
-      "nombre": "awd",
-      "precio": 14,
-      "id": 12
-    },
-    {
-      "nombre": "awd",
-      "precio": 14,
-      "id": 13
-    },
-    {
-      "nombre": "sfeafesf",
-      "precio": 12,
-      "id": 14
-    },
-    {
-      "nombre": "sfeafesf",
-      "precio": 12,
-      "id": 15
-    },
-    {
-      "nombre": "adww",
-      "precio": 123,
-      "id": 17
+      "nombre": "nuevo producto",
+      "precio": 600,
+      "id": 7
     }
   ]
 }
