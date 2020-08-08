@@ -1,9 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { editarProductoAction } from '../actions/productoActions';
+import { useHistory } from 'react-router-dom';
 
 const EditarProducto = () => {
 
+    const history = useHistory();
+    const dispatch = useDispatch();
+    
     //nuevo state de productos
     const [ producto, guardarProducto ] = useState({
         nombre: '',
@@ -26,11 +30,12 @@ const EditarProducto = () => {
 
     }
 
-    const { nombre, precio, id } = producto;
+    const { nombre, precio } = producto;
     
     const submitEditarProducto = (e) => {
         e.preventDefault();
-        editarProductoAction();
+        dispatch( editarProductoAction(producto) );
+        history.push('/');
     } 
     
     return ( 
