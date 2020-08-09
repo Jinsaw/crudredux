@@ -29,6 +29,11 @@
       "nombre": "papas",
       "precio": 12,
       "id": 9
+    },
+    {
+      "nombre": "arroz",
+      "precio": 10,
+      "id": 10
     }
   ]
 }
